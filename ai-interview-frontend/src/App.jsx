@@ -1,19 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import RoleSelection from "./pages/RoleSelection";
-import Interview from "./pages/Interview";
-import Result from "./pages/Result";
+import Interview from "./Interview";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/role" element={<RoleSelection />} />
-        <Route path="/interview" element={<Interview />} />
-        <Route path="/result" element={<Result />} />
-      </Routes>
-    </BrowserRouter>
+function App(){
+  return(
+    <div>
+      <Interview/>
+    </div>
   );
 }
 
